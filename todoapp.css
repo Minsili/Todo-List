@@ -1,0 +1,138 @@
+
+.main{
+    font-family: 'Times New Roman', Times, serif;
+    background: linear-gradient(to bottom right, rgb(229, 82, 205), rgb(124, 235, 56));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.todo-container {
+    background-color: #c0ef92;
+    font-size: 16px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(136, 137, 137, 0.1);
+    width: 50%;
+    border-radius: 10px;
+    border: none;
+    
+}
+
+h1 {
+    text-align: center;
+    color: rgb(247, 87, 188);
+}
+
+.input-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#new-task {
+    flex: 2;
+    padding: 12px 8px;
+    margin-right: 5px;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+    border: none;
+}
+
+#toggle-search {
+    flex: 0;
+    padding: 5px 10px;
+    border: none;
+    background-color: #e98c56;
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#toggle-search:hover {
+    background-color: #f0e77c;
+}
+
+#search-task {
+    padding: 10px 20px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    border: none;
+}
+
+button {
+    padding: 5px 10px;
+    outline: none;
+    border: 2px solid rgb(67, 244, 61);
+    border-radius: 8px;
+    font-size: 16px;
+    color: white;
+    background-color: rgb(249, 73, 182);
+    padding: 8px;
+}
+
+#task-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+    border-bottom: 1px solid #f14bca;
+}
+
+.task-item input[type="radio"] {
+    margin-right: 10px;
+}
+
+.task-item .task-desc {
+    flex: 1;
+}
+
+.task-item .task-date {
+    margin-left: 10px;
+    margin-right: 10px;
+    color: rgb(47, 48, 48);
+}
+
+.task-item button {
+    background: none;
+    border: none;
+    color: rgb(242, 59, 93);
+    cursor: pointer;
+}
+
+.task-item.done .task-desc {
+    text-decoration: line-through;
+}
+
+.stats {
+    background: rgb(200, 248, 127);
+    padding: 5px 10px;
+    margin-top: 20px;
+    border-radius: 5pxs;
+    text-align: left;
+}
+.delete {
+    background-color: #fb3b3b;
+  }
+
+@media only screen and (max-width: 768px) {
+    #search-task {
+        margin-bottom: 15px;
+        border-radius: 5px;
+    }
+    .todo-container {
+        width: 26em;
+    }
+}
